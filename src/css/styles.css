@@ -32,7 +32,7 @@
 
   background-image: url(../img/hero/mobile-background-1x.jpg);
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: top center;
   background-size: cover;
 
   max-width: 430px;
@@ -50,7 +50,7 @@
 .course-info {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
 }
 
 .course-category {
@@ -68,60 +68,46 @@
 }
 
 .hero-title-container {
-  position: relative;
-
-  display: flex;
-  align-items: flex-end;
-  gap: 10px;
-
-  margin-bottom: 270px;
+  margin-bottom: 250px;
 }
 
 .hero-title {
   color: #090909;
+  text-align: center;
   font-family: 'Bebas Neue Cyrillic';
-  font-size: 60px;
+  font-size: 40px;
   font-style: normal;
   font-weight: 400;
-  line-height: 86%; /* 51.6px */
-  letter-spacing: -1.8px;
+  line-height: 86%; /* 34.4px */
+  letter-spacing: -0.4px;
   text-transform: uppercase;
-
-  max-width: 200px;
 }
 
 .hero-subtitle {
-  position: absolute;
-  top: 5px;
-  right: 0;
-
-  display: block;
   color: #e0757b;
-  -webkit-text-stroke-width: 0.20000000298023224;
-  -webkit-text-stroke-color: #e0757b;
-  font-family: 'Miss Katherine Cyrillic';
-  font-size: 150px;
+  text-align: center;
+  font-family: 'Futura PT';
+  font-size: 24px;
   font-style: normal;
-  font-weight: 400;
-  line-height: 11%; /* 16.5px */
-  letter-spacing: -1.5px;
-  text-transform: lowercase;
+  font-weight: 450;
+  line-height: 89%; /* 21.36px */
+  letter-spacing: -0.48px;
 
-  max-width: 161px;
+  margin-bottom: 15px;
 }
 
 .hero-desc {
   color: #090909;
+  text-align: center;
   font-family: 'Futura PT';
-  font-size: 15px;
+  font-size: 16px;
   font-style: normal;
   font-weight: 300;
-  line-height: 89%; /* 13.35px */
-  letter-spacing: -0.3px;
+  line-height: 89%; /* 14.24px */
+  letter-spacing: -0.32px;
 
-  max-width: 142px;
-
-  padding-bottom: 5px;
+  max-width: 268px;
+  margin: 0 auto;
 }
 
 .hero-list {
@@ -149,7 +135,7 @@
   line-height: 90%; /* 12.6px */
   letter-spacing: -0.28px;
 
-  padding: 15px 20px;
+  padding: 14px 20px;
   max-width: 157px;
   width: 100%;
   height: 48px;
@@ -157,11 +143,30 @@
   background: #fff;
 }
 
+.hero-list .list-item:last-child {
+  max-width: 100%;
+  width: 100%;
+}
+
 .hero-list .item-image {
   position: absolute;
   left: 50%;
   top: -14px;
   transform: translate(-50%);
+}
+
+.promise-text {
+  color: #fff;
+  text-align: center;
+  font-family: 'Futura PT';
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 450;
+  line-height: 89%; /* 17.8px */
+  letter-spacing: -0.4px;
+
+  max-width: 228px;
+  margin: 20px auto 10px auto;
 }
 
 .header-button-container {
@@ -272,14 +277,10 @@
   letter-spacing: -0.6px;
   text-transform: uppercase;
 
-  margin-bottom: 20px;
-}
+  max-width: 284px;
+  margin: 0 auto;
 
-.bonus-title span {
-  font-size: 18px;
-  font-weight: 400;
-  text-transform: lowercase;
-  opacity: 0.7;
+  margin-bottom: 20px;
 }
 
 .text-sale {
@@ -568,10 +569,6 @@
   font-weight: 450;
 }
 
-.program .program-list {
-  margin-bottom: 80px;
-}
-
 /* program */
 
 .program-list {
@@ -589,7 +586,7 @@
   border-radius: 15px;
   background: #fff;
 
-  cursor: pointer;
+  /* cursor: pointer; */
 }
 
 .open-text-container {
@@ -608,6 +605,8 @@
   padding: 7px 15px;
   border-radius: 7px;
   background: #fcd8da;
+
+  display: none;
 }
 
 .open-text-container .icon-box {
@@ -626,6 +625,8 @@
 
   transform: rotate(0deg);
   /* transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1); */
+
+  display: none;
 }
 
 .program-list .program-list-item.open .icon-box {
@@ -665,7 +666,7 @@
   border-radius: 0px;
   cursor: pointer;
 
-  margin-bottom: 20px;
+  /* margin-bottom: 20px; */
 }
 
 .program-list-item-title {
@@ -818,22 +819,22 @@
 }
 
 .about-author-text span {
-  font-size: 30px;
+  font-size: 26px;
   font-weight: 450;
   letter-spacing: -0.6px;
 }
 
 .about-author-accent {
   position: absolute;
-  right: 0;
-  bottom: 0;
+  right: 4px;
+  bottom: 25px;
 
   color: #e0757b;
   text-align: right;
   -webkit-text-stroke-width: 0.20000000298023224;
   -webkit-text-stroke-color: #e0757b;
   font-family: 'Miss Katherine Cyrillic';
-  font-size: 120px;
+  font-size: 96px;
   font-style: normal;
   font-weight: 400;
   line-height: 11%; /* 13.2px */
@@ -921,7 +922,7 @@
 }
 
 .how-happen-list .list-item:nth-child(1) .item-text {
-  max-width: 155px;
+  max-width: 195px;
 }
 
 .how-happen-list .list-item:nth-child(odd)::before {
