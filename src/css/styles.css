@@ -155,6 +155,19 @@
   transform: translate(-50%);
 }
 
+.promise-container {
+  position: relative;
+
+  max-width: 228px;
+  margin: 20px auto 10px auto;
+}
+
+.promise-img {
+  position: absolute;
+  left: -15px;
+  top: -2px;
+}
+
 .promise-text {
   color: #fff;
   text-align: center;
@@ -164,9 +177,6 @@
   font-weight: 450;
   line-height: 89%; /* 17.8px */
   letter-spacing: -0.4px;
-
-  max-width: 228px;
-  margin: 20px auto 10px auto;
 }
 
 .header-button-container {
@@ -205,9 +215,9 @@
   letter-spacing: -0.48px;
   text-transform: uppercase;
 
-  padding: 20px;
+  padding: 24px;
   border-radius: 70px;
-  background: #f7dec8;
+  background: linear-gradient(90deg, #f7d0ae 0%, #ffefe1 50%, #f7d0ae 100%);
 }
 
 /* header-sale-mark */
@@ -312,7 +322,7 @@
   padding: 10px 20px;
   border-radius: 7px;
   background: rgba(255, 255, 255, 0.1);
-  max-width: 240px;
+  max-width: 280px;
   margin: 0 auto;
 }
 
@@ -329,6 +339,25 @@
 
 .bonus-list .bonus-name span {
   font-weight: 500;
+}
+
+.bonus.white {
+  padding-top: 0;
+  background: inherit;
+}
+
+.bonus.white .bonus-title {
+  color: #090909;
+}
+.bonus.white .text-sale {
+  color: #090909;
+}
+
+.bonus.white .bonus-list .bonus-name {
+  color: #090909;
+}
+.bonus.white .bonus-list .text-wrapper {
+  background: #fcf1f2;
 }
 
 /* timer */
@@ -371,6 +400,41 @@
 
 .countdown-label {
   color: #fff;
+  text-align: center;
+  font-family: 'Futura PT';
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: -0.28px;
+
+  margin-top: -6px;
+}
+
+.bonus.white .countdown-time {
+  display: block;
+  color: #090909;
+  text-align: center;
+  font-family: 'Futura PT';
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  letter-spacing: -0.64px;
+  width: 50px;
+}
+
+.bonus.white .countdown-doubledot {
+  content: '';
+  display: flex;
+  height: 30px;
+  width: 1px;
+  background: #090909;
+  margin: 0 auto;
+}
+
+.bonus.white .countdown-label {
+  color: #090909;
   text-align: center;
   font-family: 'Futura PT';
   font-size: 14px;
@@ -951,201 +1015,61 @@
   background-color: #090909;
 }
 
-/* tariffs */
+/* price-form */
 
-.tariffs {
-  background: #e8a0a4;
+.price-form {
 }
-
-.tariffs-title {
-  color: #090909;
-  text-align: center;
-  font-family: 'Bebas Neue Cyrillic';
-  font-size: 48px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 86%; /* 41.28px */
-  letter-spacing: -1.44px;
-  text-transform: uppercase;
-
-  margin-bottom: 28px;
+.container {
 }
-
-.tariffs-list {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-}
-
-.tariffs-list .list-item {
-  padding: 30px 20px;
-  border-radius: 20px;
-  background: rgba(255, 255, 255, 0.7);
-  box-shadow: 0px 11px 7px 0px rgba(76, 47, 48, 0.05),
-    0px 5px 5px 0px rgba(76, 47, 48, 0.09),
-    0px 1px 3px 0px rgba(76, 47, 48, 0.1);
-}
-
-.tariffs-list .list-item:nth-child(even) {
-  background: #fff;
-}
-
-.item-title-container::after {
-  content: '';
-  display: block;
-
-  width: 200px;
-  height: 1px;
-  margin: 20px auto;
-
-  background: #fff;
-}
-
-.tariffs-list .list-item:nth-child(2) .item-title-container::after {
-  background: #f6e6e7;
-}
-
-.tariffs-list .item-title {
+.price {
   color: #e0757b;
-  text-align: center;
-  font-family: 'Futura PT';
-  font-size: 40px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: 100%; /* 40px */
-  text-transform: uppercase;
-
-  margin-bottom: 4px;
-}
-
-.tariffs-list .item-subtitle {
-  display: block;
-  color: #090909;
-  text-align: center;
-  font-family: 'Futura PT';
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 100%; /* 16px */
-}
-
-.included-list {
-  display: flex;
-  flex-direction: column;
-  gap: 22px;
-
-  max-width: 230px;
-  margin: 0 auto 20px auto;
-}
-
-.included-list .included-item {
-  display: flex;
-  align-items: center;
-  gap: 20px;
-}
-
-.included-list .included-text {
-  color: #090909;
-  font-family: 'Futura PT';
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 100%; /* 16px */
-
-  max-width: 190px;
-}
-
-.included-list .included-text.pink {
-  color: #e0757b;
-}
-
-.tariffs-list .entries-time {
-  display: block;
-  color: #090909;
-  text-align: center;
-  font-family: 'Futura PT';
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: 100%; /* 16px */
-}
-
-.tariffs-list .price-container::before {
-  content: '';
-  display: block;
-
-  width: 200px;
-  height: 1px;
-  margin: 20px auto;
-
-  background: #fff;
-}
-
-.tariffs-list .list-item:nth-child(2) .price-container::before {
-  background: #f6e6e7;
-}
-
-.tariffs-list .price-container {
-  position: relative;
-  margin-bottom: 20px;
-}
-
-.tariffs-list .price-container .line-throught {
-  position: absolute;
-  top: 35px;
-  left: 10px;
-
-  rotate: -5deg;
-
-  display: block;
-  width: 130px;
-  height: 3px;
-
-  background: #d5444c;
-}
-
-.tariffs-list .price {
-  color: #090909;
   text-align: center;
   font-family: 'Futura PT';
   font-size: 30px;
   font-style: normal;
-  font-weight: 500;
-  line-height: 100%; /* 30px */
+  font-weight: 600;
+  line-height: 110%;
   text-transform: uppercase;
-}
 
-.tariffs-list .price span {
-  color: rgba(9, 9, 9, 0.3);
+  margin-bottom: 10px;
 }
-
-.tariffs-list .buy-btn {
-  color: #fff;
-  font-family: 'Futura PT';
-  font-size: 16px;
-  font-style: normal;
+.price span {
+  color: #111;
   font-weight: 450;
-  line-height: normal;
-  text-transform: uppercase;
+  text-decoration: line-through;
+  text-decoration-color: #e0757b;
+}
+.price-desc-list {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
 
-  width: 100%;
-  border: inherit;
-  padding: 14px;
-  border-radius: 50px;
-  background: #e0757b;
+  max-width: 260px;
+  margin: 0 auto 10px auto;
 }
 
-.places-left {
-  display: block;
-  color: #090909;
+.price-desc-list .list-item {
+  color: #101010;
   text-align: center;
   font-family: 'Futura PT';
-  font-size: 14px;
+  font-size: 12px;
   font-style: normal;
-  font-weight: 450;
-  line-height: 100%; /* 14px */
+  font-weight: 400;
+  line-height: 120%; /* 14.4px */
+}
 
-  margin-top: 8px;
+.price-desc-list .list-item:last-child {
+  font-weight: 500;
+}
+
+.form-container {
+  position: relative;
+}
+.header-sale-mark {
+}
+.sale-mark {
+}
+.sale-number {
 }
 
 /* reviews */

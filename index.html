@@ -84,9 +84,26 @@
               Важливі нюанси, про які ніхто не говорить
             </li>
           </ul>
-          <p class="promise-text">
-            І вуа-ля- вже завтра в тебе черга за цією зачіскою
-          </p>
+          <div class="promise-container">
+            <picture
+              ><source
+                srcset="
+                  ./src/img/hero/magic-wand-1x.png 1x,
+                  ./src/img/hero/magic-wand-2x.png 2x
+                "
+                width="20"
+                height="20" />
+              <img
+                class="promise-img"
+                src="./src/img/hero/magic-wand-1x.png"
+                alt="sale"
+                width="20"
+                height="20"
+            /></picture>
+            <p class="promise-text">
+              І вуа-ля- вже завтра в тебе черга за цією зачіскою
+            </p>
+          </div>
           <div class="header-button-container">
             <a class="header-button link" data-scroll href="#register"
               >приєднатися</a
@@ -640,6 +657,147 @@
           </ul>
         </div>
       </section>
+      <section class="price-form section">
+        <div class="container">
+          <p class="price"><span>1700грн</span> 499грн</p>
+          <ul class="price-desc-list">
+            <li class="list-item">
+              Введіть свої дані, натисніть "Купити курс" і система одразу
+              перенаправить Вас до оплати!
+            </li>
+            <li class="list-item">
+              Одразу після оплати Вам надійде доступ на пошту
+            </li>
+            <li class="list-item">
+              Перевіряйте, будь ласка, папки Спам і Промоакції
+            </li>
+          </ul>
+          <div class="form-container" id="register">
+            <div class="header-sale-mark">
+              <picture
+                ><source
+                  srcset="
+                    ./src/img/hero/header-mark-1x.png 1x,
+                    ./src/img/hero/header-mark-2x.png 2x
+                  "
+                  width="60"
+                  height="60" />
+                <img
+                  class="sale-mark"
+                  src="./src/img/hero/header-mark-1x.png"
+                  alt="sale"
+                  width="60"
+                  height="60"
+              /></picture>
+              <p class="sale-number">-70%</p>
+            </div>
+            <script
+              type="module"
+              src="https://kwiga.com/build/js/kwiga-widget.js?t=1725911944000&uuid=6e400b62-bc95-4c0a-aa5b-76a17956b195&producer=https://kwiga.com/"
+            ></script>
+          </div>
+        </div>
+      </section>
+      <section class="bonus white section">
+        <div class="container">
+          <h2 class="bonus-title">При оплаті зараз ти отримаєш в подарунок</h2>
+          <ul class="bonus-list">
+            <li class="list-item">
+              <picture
+                ><source
+                  srcset="
+                    ./src/img/bonus/bonus-image-01-1x.png 1x,
+                    ./src/img/bonus/bonus-image-01-2x.png 2x
+                  "
+                  width="150"
+                  height="192" />
+                <img
+                  class="bonus-image"
+                  src="./src/img/bonus/bonus-image-01-1x.png"
+                  alt="bonus"
+                  width="150"
+                  height="192"
+              /></picture>
+              <div class="text-wrapper">
+                <p class="bonus-name">
+                  <span>Урок</span> як правильно подавати свою роботу
+                </p>
+              </div>
+            </li>
+            <li class="list-item">
+              <picture
+                ><source
+                  srcset="
+                    ./src/img/bonus/bonus-image-02-1x.png 1x,
+                    ./src/img/bonus/bonus-image-02-2x.png 2x
+                  "
+                  width="150"
+                  height="192" />
+                <img
+                  class="bonus-image"
+                  src="./src/img/bonus/bonus-image-02-1x.png"
+                  alt="bonus"
+                  width="150"
+                  height="192"
+              /></picture>
+              <div class="text-wrapper">
+                <p class="bonus-name">
+                  <span>Гайд</span> із стайлінговими засобами
+                </p>
+              </div>
+            </li>
+            <li class="list-item">
+              <picture
+                ><source
+                  srcset="
+                    ./src/img/bonus/bonus-image-03-1x.png 1x,
+                    ./src/img/bonus/bonus-image-03-2x.png 2x
+                  "
+                  width="150"
+                  height="192" />
+                <img
+                  class="bonus-image"
+                  src="./src/img/bonus/bonus-image-03-1x.png"
+                  alt="bonus"
+                  width="150"
+                  height="192"
+              /></picture>
+              <div class="text-wrapper">
+                <p class="bonus-name">
+                  <span>Доступ</span> - до ексклюзивного творчого середовища
+                  (тг-канал)
+                </p>
+              </div>
+            </li>
+          </ul>
+          <p class="text-sale">Знижка -70% діє ще:</p>
+          <div id="countdown-two" class="countdown">
+            <!-- <div class="countdown-number">
+              <span class="days countdown-time"></span>
+              <div class="countdown-label days-label"></div>
+            </div>
+            <div><span class="countdown-doubledot"></span></div> -->
+            <!-- <div class="countdown-number">
+              <span class="hours countdown-time"></span>
+              <div class="countdown-label hours-label"></div>
+            </div> -->
+            <div class="countdown-number">
+              <span class="minutes countdown-time"></span>
+              <div class="countdown-label minutes-label"></div>
+            </div>
+            <div><span class="countdown-doubledot"></span></div>
+            <div class="countdown-number">
+              <span class="seconds countdown-time"></span>
+              <div class="countdown-label seconds-label"></div>
+            </div>
+            <div><span class="countdown-doubledot"></span></div>
+            <div class="countdown-number">
+              <span class="milliseconds countdown-time"></span>
+              <div class="countdown-label milliseconds-label"></div>
+            </div>
+          </div>
+        </div>
+      </section>
       <section class="about-author section">
         <div class="container">
           <h2 class="about-author-title">Про авторку</h2>
@@ -664,245 +822,7 @@
           </div>
         </div>
       </section>
-      <section class="tariffs section" id="register" hidden>
-        <div class="container">
-          <h2 class="tariffs-title">Тарифи навчання</h2>
-          <ul class="tariffs-list">
-            <li class="list-item">
-              <div class="item-title-container">
-                <h3 class="item-title">Базовий</h3>
-                <span class="item-subtitle">(самостійний)</span>
-              </div>
-              <ul class="included-list">
-                <li class="included-item">
-                  <img
-                    width="20"
-                    height="20"
-                    class="included-checkmark"
-                    src="./src/img/tariffs/included-checkmark.svg"
-                    alt="checkmark"
-                  />
-                  <p class="included-text">
-                    Доступ до базових матеріалів курсу
-                  </p>
-                </li>
-                <li class="included-item">
-                  <img
-                    width="20"
-                    height="20"
-                    class="included-checkmark"
-                    src="./src/img/tariffs/included-checkmark.svg"
-                    alt="checkmark"
-                  />
-                  <p class="included-text">Без зворотнього звʼязку</p>
-                </li>
-                <li class="included-item">
-                  <img
-                    width="20"
-                    height="20"
-                    class="included-checkmark"
-                    src="./src/img/tariffs/included-checkmark.svg"
-                    alt="checkmark"
-                  />
-                  <p class="included-text">Без бонусних уроків</p>
-                </li>
-                <li class="included-item">
-                  <img
-                    width="20"
-                    height="20"
-                    class="included-checkmark"
-                    src="./src/img/tariffs/included-checkmark.svg"
-                    alt="checkmark"
-                  />
-                  <p class="included-text">
-                    Без уроку створення найактуальнішої <br />
-                    Голівудської хвилі❗️
-                  </p>
-                </li>
-              </ul>
-              <span class="entries-time">Доступ - 2 місяці</span>
-              <div class="price-container">
-                <div class="line-throught"></div>
-                <p class="price"><span>5160 грн</span> 1290 грн</p>
-              </div>
-              <button class="buy-btn" data-modal-open="modal1">
-                хочу базовий
-              </button>
-            </li>
-            <li class="list-item">
-              <div class="item-title-container">
-                <h3 class="item-title">Бізнес-клас</h3>
-              </div>
-              <ul class="included-list">
-                <li class="included-item">
-                  <img
-                    width="20"
-                    height="20"
-                    class="included-checkmark"
-                    src="./src/img/tariffs/included-checkmark.svg"
-                    alt="checkmark"
-                  />
-                  <p class="included-text">
-                    Доступ до усіх базових матеріалів курсу
-                  </p>
-                </li>
-                <li class="included-item">
-                  <img
-                    width="20"
-                    height="20"
-                    class="included-checkmark"
-                    src="./src/img/tariffs/included-checkmark-pink.svg"
-                    alt="checkmark"
-                  />
-                  <p class="included-text pink">
-                    Доступ до усіх бонусних уроків
-                  </p>
-                </li>
-                <li class="included-item">
-                  <img
-                    width="20"
-                    height="20"
-                    class="included-checkmark"
-                    src="./src/img/tariffs/included-checkmark-pink.svg"
-                    alt="checkmark"
-                  />
-                  <p class="included-text pink">
-                    Груповий зворотній-зв'язок у тг-каналі
-                  </p>
-                </li>
-                <li class="included-item">
-                  <img
-                    width="20"
-                    height="20"
-                    class="included-checkmark"
-                    src="./src/img/tariffs/included-checkmark-pink.svg"
-                    alt="checkmark"
-                  />
-                  <p class="included-text pink">
-                    Демонстрація трьох найактуальніших укладок
-                  </p>
-                </li>
-              </ul>
-              <span class="entries-time">Доступ - 4 місяці</span>
-              <div class="price-container">
-                <div class="line-throught"></div>
-                <p class="price"><span>9960 грн</span> 2460 грн</p>
-              </div>
-              <button class="buy-btn" data-modal-open="modal2">
-                хочу Бізнес-клас
-              </button>
-              <!-- <span class="places-left">Залишилось 20 місць</span> -->
-            </li>
-            <li class="list-item">
-              <div class="item-title-container">
-                <h3 class="item-title">VIP</h3>
-              </div>
-              <ul class="included-list">
-                <li class="included-item">
-                  <img
-                    width="20"
-                    height="20"
-                    class="included-checkmark"
-                    src="./src/img/tariffs/included-checkmark.svg"
-                    alt="checkmark"
-                  />
-                  <p class="included-text">
-                    Доступ до усіх базових матеріалів курсу
-                  </p>
-                </li>
-                <li class="included-item">
-                  <img
-                    width="20"
-                    height="20"
-                    class="included-checkmark"
-                    src="./src/img/tariffs/included-checkmark-pink.svg"
-                    alt="checkmark"
-                  />
-                  <p class="included-text pink">
-                    Доступ до усіх бонусних уроків
-                  </p>
-                </li>
-                <li class="included-item">
-                  <img
-                    width="20"
-                    height="20"
-                    class="included-checkmark"
-                    src="./src/img/tariffs/included-checkmark-pink.svg"
-                    alt="checkmark"
-                  />
-                  <p class="included-text pink">
-                    Демонстрація трьох найактуальніших укладок
-                  </p>
-                </li>
-                <li class="included-item">
-                  <img
-                    width="20"
-                    height="20"
-                    class="included-checkmark"
-                    src="./src/img/tariffs/included-checkmark-pink.svg"
-                    alt="checkmark"
-                  />
-                  <p class="included-text pink">
-                    Груповий зворотній-зв'язок у тг-каналі
-                  </p>
-                </li>
-                <li class="included-item">
-                  <img
-                    width="20"
-                    height="20"
-                    class="included-checkmark"
-                    src="./src/img/tariffs/included-checkmark-pink.svg"
-                    alt="checkmark"
-                  />
-                  <p class="included-text pink">
-                    Персональна стратегія вашого просування від авторки курсу
-                  </p>
-                </li>
-                <li class="included-item">
-                  <img
-                    width="20"
-                    height="20"
-                    class="included-checkmark"
-                    src="./src/img/tariffs/included-checkmark-pink.svg"
-                    alt="checkmark"
-                  />
-                  <p class="included-text pink">Розбір вашого інстаграм</p>
-                </li>
-                <li class="included-item">
-                  <img
-                    width="20"
-                    height="20"
-                    class="included-checkmark"
-                    src="./src/img/tariffs/included-checkmark-pink.svg"
-                    alt="checkmark"
-                  />
-                  <p class="included-text pink">
-                    Особистий чат з Іриною Мелешко у форматі питання-відповідь
-                  </p>
-                </li>
 
-                <li class="included-item">
-                  <img
-                    width="20"
-                    height="20"
-                    class="included-checkmark"
-                    src="./src/img/tariffs/included-checkmark-pink.svg"
-                    alt="checkmark"
-                  />
-                  <p class="included-text pink">1 zoom-зустріч</p>
-                </li>
-              </ul>
-              <span class="entries-time">Доступ - 6 місяців</span>
-              <div class="price-container">
-                <div class="line-throught"></div>
-                <p class="price"><span>18760 грн</span> 4690 грн</p>
-              </div>
-              <button class="buy-btn" data-modal-open="modal3">хочу VIP</button>
-              <!-- <span class="places-left">Залишилось 5 місць</span> -->
-            </li>
-          </ul>
-        </div>
-      </section>
       <section class="reviews section">
         <div class="container">
           <div class="reviews-container">
@@ -1252,55 +1172,7 @@
         </a>
       </div>
     </footer>
-    <div class="backdrop is-hidden" data-modal="modal1">
-      <div class="modal">
-        <button type="button" class="close-button" data-modal-close>
-          <img
-            src="./src/img/close-modal-icon.svg"
-            width="40"
-            height="40"
-            alt="close"
-          />
-        </button>
-        <script
-          type="module"
-          src="https://kwiga.com/build/js/kwiga-widget.js?t=1724097077000&uuid=6c670d07-e917-413a-a745-dda4e481cda7&producer=https://kwiga.com/"
-        ></script>
-      </div>
-    </div>
-    <div class="backdrop is-hidden" data-modal="modal2">
-      <div class="modal">
-        <button type="button" class="close-button" data-modal-close>
-          <img
-            src="./src/img/close-modal-icon.svg"
-            width="40"
-            height="40"
-            alt="close"
-          />
-        </button>
-        <script
-          type="module"
-          src="https://kwiga.com/build/js/kwiga-widget.js?t=1724096298000&uuid=a94dd6c4-76c5-4f54-afb3-c8f11404de66&producer=https://kwiga.com/"
-        ></script>
-      </div>
-    </div>
-    <div class="backdrop is-hidden" data-modal="modal3">
-      <div class="modal">
-        <button type="button" class="close-button" data-modal-close>
-          <img
-            src="./src/img/close-modal-icon.svg"
-            width="40"
-            height="40"
-            alt="close"
-          />
-        </button>
-        <script
-          type="module"
-          src="https://kwiga.com/build/js/kwiga-widget.js?t=1724097007000&uuid=a1136e74-c7d8-4d11-9b6b-33a18d336dd2&producer=https://kwiga.com/"
-        ></script>
-      </div>
-    </div>
-    <script src="./src/js/js-modal.js" type="module"></script>
+
     <script src="./src/js/hero-btn.js" type="module"></script>
     <script src="./src/js/timer.js" type="module"></script>
     <script src="./src/js/program.js" type="module"></script>
